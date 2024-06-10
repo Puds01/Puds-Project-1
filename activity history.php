@@ -35,7 +35,6 @@ usort($combined_results, function($a, $b) {
 <body>
 
     <div class="container1">
-        <a href="index.php">
             <img src="Images/icon1.png" alt="Icon" class="icon1">
         </a>
     </div>

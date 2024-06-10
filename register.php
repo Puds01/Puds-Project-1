@@ -27,24 +27,12 @@ require_once 'includes/signup_view.php';
     		<img src="Images/logo2.png" alt="Logo" class="logo2">
 
         	<form action="includes/registerhandler.php" method="POST" class="form1">
-        		<div class="input-design1">
-                    <input type = "text" name = "email" placeholder ="" required class="input1">
-			        <label class="label1">Email</label>
-			    </div>
-
-                <div class="input-design1">
-                    <input type = "text" name = "username" placeholder ="" required class="input1">
-			        <label class="label1">Username</label>
-			    </div>
-			    <div class="input-design2">
-                <input type = "password" name = "password" placeholder = "" class="input2" required>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-			    <label class="label2">Password</label>
-
-                <button type ="submit" class="submit"  >Register</button>
-                <?php
+                
+        	    <?php
                 check_signup_errors();
+                signup_input();
                 ?>
+                <button type ="submit" class="submit"  >Register</button>
                 <br><br>    
         
                 </div>
@@ -52,14 +40,6 @@ require_once 'includes/signup_view.php';
             <a href = "login.php"><button class="submit">Login here</button></a>
         </div>  
     </div>
-    <form action="includes/registerhandler.php" method="POST">
-        <?php
-        signup_input();
-        ?>
-        <button>Register</button>
-    </form>
-
-
 </body>
 
 </html>
