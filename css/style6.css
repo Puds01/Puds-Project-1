@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.container1 {
+    width: 100%;
+    height: 50px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    border: 2.4px solid #0F46B4;
+    display: flex;
+    align-items: center;
+}
+
+.icon1{
+    width: 90px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.side-nav {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0F46B4;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    background-color: white;
+    padding-top: 20px;
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-right: 2.5px solid #0F46B4;
+}
+
+.dropdown-btn{
+    top: 20px;
+    margin-top: 10px;
+}
+
+.side-nav a, .dropdown-btn{
+    background-color: white;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0F46B4;
+    display: block;
+    border-bottom: 1px solid #0F46B4;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #0F46B4;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    transition: 0.6s ease;
+}
+
+.side-nav a:hover, .dropdown-btn:hover {
+    background-color: #0F46B4;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #0F46B4;
+    padding-left: 10px;
+}
+
+.fa-solid{
+    float: right;
+    padding-right: 8px;
+}
+
+.logo2 {
+    margin-left: 70px;
+    width: 150px; 
+    height: auto; 
+    
+}
+
+span{
+  font-size: 35px;
+  color: #0000cc;
+  font-family: helvetica, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.title-container{
+    margin-left: 300px;
+    padding: 20px;
+    margin-top: 50px;
+    background: white;
+    border-bottom: 2px solid #0F46B4;
+    width: calc(100% - 250px);
+}
+
+.info-container{
+    margin-top: 20px;
+    margin-left: 320px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #0F46B4;
+    border-radius: 10px;
+    width: calc(95% - 250px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.info-container label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edit-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 20px;
+    background-color: #0F46B4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.edit-button:hover{
+    background-color: white;
+    color: black;
+    border: 2.5px solid #0F46B4;
+}
+
+.edit-container{
+    display: none;
+    margin-top: 200px;
+    margin-left: 550px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #0F46B4;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: calc(70% - 250px);
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.edit-container .row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.edit-container label{
+    width: 150px;
+    margin-right: 10px;
+}
+
+.edit-container #editInput1{
+    flex: 1;
+    padding: 15px;
+    border: 1.5px solid #0F46B4;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.edit-container button{
+    padding: 15px;
+    background-color: #0F46B4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 790px;
+    transition: 0.7s ease;
+}
+
+.edit-container button.button2{
+    width: 470px;
+}
+
+.edit-container button:hover{
+    background-color: #007BFF;
+}
+
+.edit-button i{
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+#loader{
+    background: #FBFBFB url("Images/loader.gif") no-repeat center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1500;
+}
+
+iframe{
+    display: none;
+}
