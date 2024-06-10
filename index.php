@@ -21,7 +21,7 @@
     	<div class="container2">
     		<div class="in-container1">
     			<img src="Images/logo2.png" alt="Logo" class="logo2">
-        		<a href="login.php" class="btn1">Admin Login...<span></span></a>
+        		<a href="login.php" class="btn1">Admin Login<span></span></a>
         	</div>
     	</div>
 
