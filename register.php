@@ -13,6 +13,7 @@ require_once 'includes/signup_view.php';
     <title>ABC Manufacturing</title>
 </head>
 <body>
+    <div id="loader"></div>
     <a href = "login.php">Login</a>
     <br>
     <br>

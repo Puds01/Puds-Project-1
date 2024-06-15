@@ -18,6 +18,7 @@ require_once 'includes/login_view.php';
 
 
     <body>
+    <div id="loader"></div>
 
         <div class="container1">
                 <img src="Images/icon1.png" alt="Icon" class="icon1">
