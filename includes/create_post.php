@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         header ("Location: ../public feed.php");
 
-        $pdo = NULL;
+        $pdo = NULL;    
         $stmt = NULL;
 
         die();

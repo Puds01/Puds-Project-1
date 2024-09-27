@@ -10,6 +10,10 @@ function get_user(object $pdo, string $email)
     $stmt->bindParam(":email", $email);
     $stmt->execute();
 
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    $result = $stmt->fetch(PDO::FETCH_ASSOC); 
     return $result;
 }
+
+// password, id, age, weight
+
+$result = ['password', 'id', 'age', 'weight'];
